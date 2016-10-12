@@ -1,0 +1,282 @@
+/****** BROWSER RESET *****/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/***** BROWSER RESET *****/
+
+
+/***** CSS START *****/
+/***** CSS START *****/
+/***** CSS START *****/
+
+
+/***** HEADER *****/
+
+.head_1 {
+    
+    background: green;
+    width: 1000px;
+    height: 75px;
+    margin: 0 auto;
+    display: flex;
+    z-index: 2;
+    position: relative;
+    
+}
+
+.head_1 p{
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-left: 5%;
+    padding: 10px;
+    color: white;
+    font-family: "Open Sans";
+    font-size: 20px;
+    border: 5px solid white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.dropdown {
+    display: flex;
+    position: relative;
+   
+}
+
+.dropbtn {
+    padding: 0 10px;
+    border: 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dropcontent {
+    background: #eb9d9d;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    display: none;
+    position: absolute;
+    top: 75px;
+    right: 0;
+    width: 125px;
+    flex-direction: column;
+}
+
+.showcontent {
+    display: flex;
+}
+
+.dropcontent a{
+    color:white;
+    padding: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+ 
+.dropbtn:hover, .dropcontent a:hover {
+    background: #afa4a4;
+}
+
+/***** PANEL 1 *****/
+
+.body_1 {
+    
+    width: 1000px;
+    height: 450px;
+    margin: auto;
+    display:flex;
+    background-color: #b7bcad;
+    box-shadow: 0px 5px 20px -10px gray;
+    position: relative;
+}
+
+.body_1_text {
+    
+    color: #ffffff;
+    font-family: "Open Sans";
+    display: inline;
+    margin: auto;
+    font-size: 50px;
+    flex: 1;
+    text-align: center;
+    
+}
+
+.body_1_img {
+    background-image: url(images/Grumpy-Cat-1920x1200.jpg);
+    background-position: bottom right;
+    background-size: cover;
+    height: 450px;
+    flex: 1;
+}
+
+/*** BODY ***/
+
+#body_panel1 {
+    
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    background: #d8d3d3;
+    font-family: "Open Sans";
+    font-size: 14px;
+
+}
+
+.bodypanel {
+    padding: 35px;
+    text-align: justify;
+}
+
+#body_content_2 {
+    color: darkcyan;
+}
+
+footer {
+    height: 50px;
+    width: 1000px;
+    margin: auto;
+    background: #5f5f67;
+    font-family: "Open Sans";
+    font-size: 10px;
+    text-align: center;
+    
+}
+
+/** FORM LAYOUT **/
+
+#formtext {
+    text-align: center;
+    font-size: 20px;
+}
+
+#form {
+    display: flex;
+    width: 50%;
+    margin: auto;
+}
+
+#form2 {
+    margin: auto;
+    width: 100%;
+}
+
+input, textarea {
+    outline: none;
+    width: 100%;
+    padding: 5px;
+    margin: 2px 0 8px 0;
+    border-radius: 4px;
+    transition: 0.5s;
+    border: 3px solid rgba(255, 255, 255, 0);
+    resize: none;
+}
+
+input:focus, textarea:focus {
+    border: 3px solid #a8a0a0;
+}
+
+
+footer p {
+    padding: 20px;
+    color: white;
+    text-align: right;
+    
+}
+
+footer p:hover {
+    color:aqua;
+}
+
+/** 
+
+You may want to split the body into two panels to keep responsiveness. If you want
+the text to float above the cat picture, I think that's the way to do it. Plus, you
+can keep the side of the cat picture static.
+
+**/
+
+@media all and (max-width: 1000px) {
+    .head_1 {
+        background: red;
+        width: auto;
+    }
+    
+    .body_1 {
+        width: auto;
+        background-size: 1000px;
+        background-position: right bottom;
+        flex-direction: column;
+    }
+    
+    .body_1_text {
+        flex: 1;
+        padding-top: 10%;
+    }
+    
+    .body_1_img {
+        flex: 3;
+    }
+    
+    #body_panel1 {
+        flex-direction: column;
+        width: auto;
+        height: auto;
+    }
+    
+    .bodypanel {
+        padding: 20px 30px;
+    }
+    
+    #body_content_2 {
+        order: -1;
+    }
+    
+    footer {
+        width: auto;
+    }
+    
+}
