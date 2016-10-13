@@ -4,13 +4,10 @@ if(isset($_POST['submit'])) {
     
     $to = "isaiah.sanmiguel@gmail.com";
     $subject = "New Email from " $_POST['name'];
-    $message = $_POST['body'];
-    $headers = $_POST['subject'];
+    $message = $_POST['subject']\n$_POST['body'];
     
-    mail($to, %subject, $message, $headers);
+    mail($to, %subject, $message);
      
-    header("Location: contact.html"); 
-    
 }
 
 ?>
