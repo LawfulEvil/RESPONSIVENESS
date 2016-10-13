@@ -18,7 +18,7 @@
     <div class="dropdown">
         <button onclick="dropdown1()" class="dropbtn">HOME</button>
          <div id="dropbtn_1" class="dropcontent">
-                <a href="#">Home 1</a>
+                <a href="index.html">Home 1</a>
                 <a href="#">Home 2</a>
             </div>
     </div>
@@ -55,23 +55,23 @@
         
     
         <div id="form" class="bodypanel">
-            <form id="form2" action="process.php">
+            <form id="form2" method="post" action="process.php">
                 
                 <p id="formtext">QUESTIONS?</p><br>
                 
                 <p>        
                 <label for="name">Name: </label>
-                <input type="text" name="name" value=Name><br>
+                <input type="text" name="name" value=Name required><br>
                 </p>
                 
                 <p>
                 <label for="name">Subject:</label>
-                <input type="text" name="subject"><br>
+                <input type="text" name="subject" required><br>
                 </p>
                 
                 <p>
                 <label for="name">Message:</label>
-                <textarea name="" cols="30" rows="10">
+                <textarea name="body" cols="30" rows="10" required>
                 </textarea>
                 </p>
                 
